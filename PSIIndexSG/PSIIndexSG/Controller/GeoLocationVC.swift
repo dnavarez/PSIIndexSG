@@ -8,11 +8,16 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class GeoLocationVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        RestApiServices.getSGPSIIndex { (psiModel) in
+            print(psiModel)
+            print("end")
+        }
     }
 
     override func didReceiveMemoryWarning() {

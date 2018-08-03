@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		32245A881FA12079EB3D5794 /* Pods_PSIIndexSG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD36467FAC157C6469AF0C5 /* Pods_PSIIndexSG.framework */; };
 		8B19D6BA21140344005704CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6B921140344005704CF /* AppDelegate.swift */; };
-		8B19D6DA21140856005704CF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6CF21140855005704CF /* FirstViewController.swift */; };
+		8B19D6DA21140856005704CF /* GeoLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6CF21140855005704CF /* GeoLocationVC.swift */; };
 		8B19D6DB21140856005704CF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6D021140855005704CF /* SecondViewController.swift */; };
 		8B19D6DC21140856005704CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B19D6D221140855005704CF /* LaunchScreen.storyboard */; };
 		8B19D6DD21140856005704CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B19D6D321140855005704CF /* Main.storyboard */; };
 		8B19D6DE21140856005704CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B19D6D621140855005704CF /* Assets.xcassets */; };
+		8B19D6E021140A32005704CF /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6DF21140A32005704CF /* Keys.swift */; };
+		8B19D6E321140AF2005704CF /* RestAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6E121140AF2005704CF /* RestAPIServices.swift */; };
+		8B19D6E621141501005704CF /* PSIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6E521141501005704CF /* PSIModel.swift */; };
+		8B19D6EA21142FF4005704CF /* RegionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6E921142FF4005704CF /* RegionAttributes.swift */; };
+		8B19D6EC21143025005704CF /* ItemsAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6EB21143025005704CF /* ItemsAttributes.swift */; };
+		8B19D6EE211430AC005704CF /* ApiInfoAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6ED211430AC005704CF /* ApiInfoAttribute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +29,17 @@
 		8B19D6B621140344005704CF /* PSIIndexSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSIIndexSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B19D6B921140344005704CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B19D6C721140347005704CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B19D6CF21140855005704CF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8B19D6CF21140855005704CF /* GeoLocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocationVC.swift; sourceTree = "<group>"; };
 		8B19D6D021140855005704CF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8B19D6D221140855005704CF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B19D6D321140855005704CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B19D6D621140855005704CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B19D6DF21140A32005704CF /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		8B19D6E121140AF2005704CF /* RestAPIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIServices.swift; sourceTree = "<group>"; };
+		8B19D6E521141501005704CF /* PSIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIModel.swift; sourceTree = "<group>"; };
+		8B19D6E921142FF4005704CF /* RegionAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionAttributes.swift; sourceTree = "<group>"; };
+		8B19D6EB21143025005704CF /* ItemsAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsAttributes.swift; sourceTree = "<group>"; };
+		8B19D6ED211430AC005704CF /* ApiInfoAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInfoAttribute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +75,12 @@
 		8B19D6B821140344005704CF /* PSIIndexSG */ = {
 			isa = PBXGroup;
 			children = (
+				8B19D6D921140856005704CF /* Utility */,
 				8B19D6D521140855005704CF /* Assets */,
 				8B19D6D121140855005704CF /* Storyboard */,
 				8B19D6CE21140855005704CF /* Controller */,
 				8B19D6D421140855005704CF /* Model */,
 				8B19D6CD21140855005704CF /* RestAPIService */,
-				8B19D6D921140856005704CF /* Utility */,
 				8B19D6D721140855005704CF /* View */,
 				8B19D6D821140855005704CF /* ViewModel */,
 				8B19D6B921140344005704CF /* AppDelegate.swift */,
@@ -80,6 +92,7 @@
 		8B19D6CD21140855005704CF /* RestAPIService */ = {
 			isa = PBXGroup;
 			children = (
+				8B19D6E121140AF2005704CF /* RestAPIServices.swift */,
 			);
 			path = RestAPIService;
 			sourceTree = "<group>";
@@ -87,7 +100,7 @@
 		8B19D6CE21140855005704CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8B19D6CF21140855005704CF /* FirstViewController.swift */,
+				8B19D6CF21140855005704CF /* GeoLocationVC.swift */,
 				8B19D6D021140855005704CF /* SecondViewController.swift */,
 			);
 			path = Controller;
@@ -105,6 +118,10 @@
 		8B19D6D421140855005704CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B19D6E521141501005704CF /* PSIModel.swift */,
+				8B19D6E921142FF4005704CF /* RegionAttributes.swift */,
+				8B19D6EB21143025005704CF /* ItemsAttributes.swift */,
+				8B19D6ED211430AC005704CF /* ApiInfoAttribute.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +151,7 @@
 		8B19D6D921140856005704CF /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				8B19D6DF21140A32005704CF /* Keys.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -167,6 +185,7 @@
 				8B19D6B321140344005704CF /* Frameworks */,
 				8B19D6B421140344005704CF /* Resources */,
 				C815145A77E732B3F5D30545 /* [CP] Copy Pods Resources */,
+				E4B62DD616A33E8D0926F8A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +281,30 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PSIIndexSG/Pods-PSIIndexSG-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4B62DD616A33E8D0926F8A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PSIIndexSG/Pods-PSIIndexSG-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Networking/Networking.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Networking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PSIIndexSG/Pods-PSIIndexSG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,8 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B19D6DB21140856005704CF /* SecondViewController.swift in Sources */,
+				8B19D6EE211430AC005704CF /* ApiInfoAttribute.swift in Sources */,
+				8B19D6EC21143025005704CF /* ItemsAttributes.swift in Sources */,
+				8B19D6E621141501005704CF /* PSIModel.swift in Sources */,
+				8B19D6E021140A32005704CF /* Keys.swift in Sources */,
+				8B19D6EA21142FF4005704CF /* RegionAttributes.swift in Sources */,
 				8B19D6BA21140344005704CF /* AppDelegate.swift in Sources */,
-				8B19D6DA21140856005704CF /* FirstViewController.swift in Sources */,
+				8B19D6E321140AF2005704CF /* RestAPIServices.swift in Sources */,
+				8B19D6DA21140856005704CF /* GeoLocationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
