@@ -9,7 +9,6 @@ target 'PSIIndexSG' do
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'Networking', '3.0.2'
 
   # Pods for PSIIndexSG
 

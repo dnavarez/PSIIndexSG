@@ -20,17 +20,7 @@ struct RestApiServices {
         let url = NetworkSettings.BASE_URL
         
         Alamofire.request(url).responseObject { (response: DataResponse<PSIModel>) in
-            
             guard let psiModel = response.result.value else { return }
-            print(psiModel.regionMetadata)
-                //
-                //            if let threeDayForecast = weatherResponse?.threeDayForecast {
-                //                for forecast in threeDayForecast {
-                //                    print(forecast.day)
-                //                    print(forecast.temperature)
-                //                }
-                //            }
-            
             completion(psiModel)
         }
     }
