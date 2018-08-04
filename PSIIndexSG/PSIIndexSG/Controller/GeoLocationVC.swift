@@ -81,16 +81,20 @@ class GeoLocationVC: UIViewController {
             alertSheet.addAction(UIAlertAction(title: text, style: .default, handler: { (action) in
                 print("select index = \(key)")
                 
-                self.appHelper.showLoadingInView(view: self.view, msg: "Updating...")
-                self.view.layoutIfNeeded()
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                if self.psiSelectedKey != key as? String {
+                    self.appHelper.showLoadingInView(view: self.view, msg: "Updating...")
+                    self.view.layoutIfNeeded()
+                    
                     self.psiSelectedKey = key as? String
                     self.customizeButtonText(arrayText: value)
-                    self.fillIndexValue()
                     
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                        self.fillIndexValue()
+                        self.appHelper.endLoading()
+                    })
+                } else {
                     self.appHelper.endLoading()
-                })
+                }
             }))
         }
     }
@@ -127,6 +131,8 @@ class GeoLocationVC: UIViewController {
                 if self.isFirstLoad {
                     self.isFirstLoad = false
                     
+                    self.navigationItem.title = self.psiModel?.apiInfo?.status?.uppercased()
+                    
                     // Since it's first time controller loaded, we plot marker on map
                     for regionAttr in psiModel.regionMetadata! {
                         self.setupMarker(regionAttr: regionAttr)
@@ -147,7 +153,6 @@ class GeoLocationVC: UIViewController {
     }
     
     func fillIndexValue() {
-        
         let itemsAttr = psiModel?.items?.first
         var readingSubAttr:ReadingSubAttributes?
         
@@ -200,7 +205,6 @@ class GeoLocationVC: UIViewController {
     }
     
     func setupMarker(regionAttr: RegionAttributes) {
-        
         let marker = GMSMarker()
         let markerView = Bundle.main.loadNibNamed("MarkerView", owner: self, options: nil)![0] as! MarkerView
         markerView.locationLabel.text = regionAttr.name

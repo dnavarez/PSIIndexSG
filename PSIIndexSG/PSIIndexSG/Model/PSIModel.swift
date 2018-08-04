@@ -11,6 +11,7 @@ import ObjectMapper
 class PSIModel: Mappable {
     var regionMetadata : [RegionAttributes]?
     var items : [ItemsAttributes]?
+    var apiInfo : ApiInfoAttribute?
     
     required init?(map: Map){
         
@@ -19,6 +20,7 @@ class PSIModel: Mappable {
     func mapping(map: Map) {
         regionMetadata <- map["region_metadata"]
         items <- map["items"]
+        apiInfo <- map["api_info"]
     }
 }
 
