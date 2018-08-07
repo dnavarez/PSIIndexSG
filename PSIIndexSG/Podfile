@@ -12,4 +12,10 @@ target 'PSIIndexSG' do
 
   # Pods for PSIIndexSG
 
+
+end
+
+target 'PSIIndexSGTests' do
+  pod 'Quick'
+  pod 'Nimble'
 end

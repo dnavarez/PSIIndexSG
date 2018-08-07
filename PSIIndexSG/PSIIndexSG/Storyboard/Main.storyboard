@@ -13,7 +13,7 @@
         <!--Geo LocationVC-->
         <scene sceneID="Z8k-9U-9l6">
             <objects>
-                <viewController id="uFY-nG-HjZ" customClass="GeoLocationVC" customModule="PSIIndexSG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GeoLocationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uFY-nG-HjZ" customClass="GeoLocationVC" customModule="PSIIndexSG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iuf-Bl-Sdj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

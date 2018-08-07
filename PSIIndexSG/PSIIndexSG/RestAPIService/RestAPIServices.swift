@@ -21,7 +21,18 @@ struct RestApiServices {
         
         Alamofire.request(url).responseObject { (response: DataResponse<PSIModel>) in
             guard let psiModel = response.result.value else { return }
+            print("Done fetching from: \(url)")
             completion(psiModel)
+        }
+    }
+    
+    static func cancelAllRequest(completion: @escaping () -> Void) {
+        Alamofire.SessionManager.default.session.getTasksWithCompletionHandler { (sessionDataTask, uploadData, downloadData) in
+            sessionDataTask.forEach { $0.cancel() }
+            uploadData.forEach { $0.cancel() }
+            downloadData.forEach { $0.cancel() }
+            
+            completion()
         }
     }
 }

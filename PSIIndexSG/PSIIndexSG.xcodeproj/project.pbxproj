@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		32245A881FA12079EB3D5794 /* Pods_PSIIndexSG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD36467FAC157C6469AF0C5 /* Pods_PSIIndexSG.framework */; };
+		392B31C9DC6DE442B5330B89 /* libPods-PSIIndexSGTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9803D7DC58DBA6E756E05FCB /* libPods-PSIIndexSGTests.a */; };
 		8B19D6BA21140344005704CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6B921140344005704CF /* AppDelegate.swift */; };
 		8B19D6DA21140856005704CF /* GeoLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6CF21140855005704CF /* GeoLocationVC.swift */; };
 		8B19D6DC21140856005704CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B19D6D221140855005704CF /* LaunchScreen.storyboard */; };
@@ -19,15 +20,29 @@
 		8B19D6EA21142FF4005704CF /* RegionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6E921142FF4005704CF /* RegionAttributes.swift */; };
 		8B19D6EC21143025005704CF /* ItemsAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6EB21143025005704CF /* ItemsAttributes.swift */; };
 		8B19D6EE211430AC005704CF /* ApiInfoAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19D6ED211430AC005704CF /* ApiInfoAttribute.swift */; };
+		8B50C5AC2119428600188B76 /* PSIIndexSGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B50C5AB2119428600188B76 /* PSIIndexSGTests.swift */; };
 		8BB4508E211583260079D08B /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB4508D211583260079D08B /* MarkerView.xib */; };
 		8BB450902115833C0079D08B /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4508F2115833C0079D08B /* MarkerView.swift */; };
 		8BB450922115BF300079D08B /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB450912115BF300079D08B /* AppHelper.swift */; };
+		BDF7F6C7B2E957E21A2DF178 /* Pods_PSIIndexSG_PSIIndexSGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD22CBA77D9F20F1993CF76 /* Pods_PSIIndexSG_PSIIndexSGTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B50C5AE2119428600188B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B19D6AE21140344005704CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B19D6B521140344005704CF;
+			remoteInfo = PSIIndexSG;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2FD36467FAC157C6469AF0C5 /* Pods_PSIIndexSG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSIIndexSG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		487624F8EED9DBBA2A9D5DF0 /* Pods-PSIIndexSG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIIndexSG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSIIndexSG/Pods-PSIIndexSG.debug.xcconfig"; sourceTree = "<group>"; };
+		4C59FFE2E89A9F0631A57E98 /* Pods-PSIIndexSGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIIndexSGTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSIIndexSGTests/Pods-PSIIndexSGTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77686E03F529C7CB01D46FB1 /* Pods-PSIIndexSG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIIndexSG.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSIIndexSG/Pods-PSIIndexSG.release.xcconfig"; sourceTree = "<group>"; };
+		77E61B7C09F857918FF79530 /* Pods-PSIIndexSGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIIndexSGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSIIndexSGTests/Pods-PSIIndexSGTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B19D6B621140344005704CF /* PSIIndexSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSIIndexSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B19D6B921140344005704CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B19D6C721140347005704CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,9 +56,16 @@
 		8B19D6E921142FF4005704CF /* RegionAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionAttributes.swift; sourceTree = "<group>"; };
 		8B19D6EB21143025005704CF /* ItemsAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsAttributes.swift; sourceTree = "<group>"; };
 		8B19D6ED211430AC005704CF /* ApiInfoAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInfoAttribute.swift; sourceTree = "<group>"; };
+		8B50C5A92119428600188B76 /* PSIIndexSGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSIIndexSGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B50C5AB2119428600188B76 /* PSIIndexSGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIIndexSGTests.swift; sourceTree = "<group>"; };
+		8B50C5AD2119428600188B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB4508D211583260079D08B /* MarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
 		8BB4508F2115833C0079D08B /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		8BB450912115BF300079D08B /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		9803D7DC58DBA6E756E05FCB /* libPods-PSIIndexSGTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSIIndexSGTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A096BBB770C05A6DA78874E0 /* Pods-PSIIndexSG-PSIIndexSGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIIndexSG-PSIIndexSGTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSIIndexSG-PSIIndexSGTests/Pods-PSIIndexSG-PSIIndexSGTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBD22CBA77D9F20F1993CF76 /* Pods_PSIIndexSG_PSIIndexSGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSIIndexSG_PSIIndexSGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5418819C97D50EE0FAD39CF /* Pods-PSIIndexSG-PSIIndexSGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIIndexSG-PSIIndexSGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSIIndexSG-PSIIndexSGTests/Pods-PSIIndexSG-PSIIndexSGTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +77,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B50C5A62119428600188B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392B31C9DC6DE442B5330B89 /* libPods-PSIIndexSGTests.a in Frameworks */,
+				BDF7F6C7B2E957E21A2DF178 /* Pods_PSIIndexSG_PSIIndexSGTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8B19D6B821140344005704CF /* PSIIndexSG */,
+				8B50C5AA2119428600188B76 /* PSIIndexSGTests */,
 				8B19D6B721140344005704CF /* Products */,
 				95A57B2CFE2C848E98484ACA /* Pods */,
 				E5ABA354798D153FDBE55A3E /* Frameworks */,
@@ -72,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8B19D6B621140344005704CF /* PSIIndexSG.app */,
+				8B50C5A92119428600188B76 /* PSIIndexSGTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +194,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		8B50C5AA2119428600188B76 /* PSIIndexSGTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B50C5AB2119428600188B76 /* PSIIndexSGTests.swift */,
+				8B50C5AD2119428600188B76 /* Info.plist */,
+			);
+			path = PSIIndexSGTests;
+			sourceTree = "<group>";
+		};
 		8BB4508C21157D550079D08B /* XIB */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +217,10 @@
 			children = (
 				487624F8EED9DBBA2A9D5DF0 /* Pods-PSIIndexSG.debug.xcconfig */,
 				77686E03F529C7CB01D46FB1 /* Pods-PSIIndexSG.release.xcconfig */,
+				4C59FFE2E89A9F0631A57E98 /* Pods-PSIIndexSGTests.debug.xcconfig */,
+				77E61B7C09F857918FF79530 /* Pods-PSIIndexSGTests.release.xcconfig */,
+				A096BBB770C05A6DA78874E0 /* Pods-PSIIndexSG-PSIIndexSGTests.debug.xcconfig */,
+				E5418819C97D50EE0FAD39CF /* Pods-PSIIndexSG-PSIIndexSGTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -183,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				2FD36467FAC157C6469AF0C5 /* Pods_PSIIndexSG.framework */,
+				9803D7DC58DBA6E756E05FCB /* libPods-PSIIndexSGTests.a */,
+				CBD22CBA77D9F20F1993CF76 /* Pods_PSIIndexSG_PSIIndexSGTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +258,25 @@
 			productReference = 8B19D6B621140344005704CF /* PSIIndexSG.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8B50C5A82119428600188B76 /* PSIIndexSGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B50C5B22119428600188B76 /* Build configuration list for PBXNativeTarget "PSIIndexSGTests" */;
+			buildPhases = (
+				0863149C5D65B44E293B6EE9 /* [CP] Check Pods Manifest.lock */,
+				8B50C5A52119428600188B76 /* Sources */,
+				8B50C5A62119428600188B76 /* Frameworks */,
+				8B50C5A72119428600188B76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B50C5AF2119428600188B76 /* PBXTargetDependency */,
+			);
+			name = PSIIndexSGTests;
+			productName = PSIIndexSGTests;
+			productReference = 8B50C5A92119428600188B76 /* PSIIndexSGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +289,10 @@
 				TargetAttributes = {
 					8B19D6B521140344005704CF = {
 						CreatedOnToolsVersion = 9.3.1;
+					};
+					8B50C5A82119428600188B76 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 8B19D6B521140344005704CF;
 					};
 				};
 			};
@@ -239,6 +310,7 @@
 			projectRoot = "";
 			targets = (
 				8B19D6B521140344005704CF /* PSIIndexSG */,
+				8B50C5A82119428600188B76 /* PSIIndexSGTests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,9 +327,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B50C5A72119428600188B76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0863149C5D65B44E293B6EE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PSIIndexSGTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		16547E4967CB54E539068AB0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,7 +435,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B50C5A52119428600188B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B50C5AC2119428600188B76 /* PSIIndexSGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B50C5AF2119428600188B76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B19D6B521140344005704CF /* PSIIndexSG */;
+			targetProxy = 8B50C5AE2119428600188B76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8B19D6C821140347005704CF /* Debug */ = {
@@ -463,10 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MN5PJ5RZ3V;
 				INFOPLIST_FILE = PSIIndexSG/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dnavarez.PSIIndexSG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -482,14 +592,47 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MN5PJ5RZ3V;
 				INFOPLIST_FILE = PSIIndexSG/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dnavarez.PSIIndexSG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B50C5B02119428600188B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C59FFE2E89A9F0631A57E98 /* Pods-PSIIndexSGTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MN5PJ5RZ3V;
+				INFOPLIST_FILE = PSIIndexSGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnavarez.PSIIndexSGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSIIndexSG.app/PSIIndexSG";
+			};
+			name = Debug;
+		};
+		8B50C5B12119428600188B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E61B7C09F857918FF79530 /* Pods-PSIIndexSGTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MN5PJ5RZ3V;
+				INFOPLIST_FILE = PSIIndexSGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dnavarez.PSIIndexSGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSIIndexSG.app/PSIIndexSG";
 			};
 			name = Release;
 		};
@@ -510,6 +653,15 @@
 			buildConfigurations = (
 				8B19D6CB21140347005704CF /* Debug */,
 				8B19D6CC21140347005704CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B50C5B22119428600188B76 /* Build configuration list for PBXNativeTarget "PSIIndexSGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B50C5B02119428600188B76 /* Debug */,
+				8B50C5B12119428600188B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
