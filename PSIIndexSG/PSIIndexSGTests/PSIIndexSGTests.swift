@@ -9,13 +9,9 @@
 import Quick
 import Nimble
 
-
-
 @testable import PSIIndexSG
 
 class PSIIndexSGTests: QuickSpec {
-    
-    
     
     override func spec() {
         var psiModel: PSIModel!
@@ -50,7 +46,6 @@ class PSIIndexSGTests: QuickSpec {
                 expect(psiModel.items?.count).to(equal(1))
             }
             
-            
             it("should have reading indexes property values") {
                 let item = psiModel.items?.first
                 var readingAttr:ReadingAttributes?
@@ -62,7 +57,6 @@ class PSIIndexSGTests: QuickSpec {
                 mirror.children.forEach({ (property) in
                     expect(property.label).toNot(beNil())
                 })
-                
             }
         }
     }
